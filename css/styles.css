@@ -201,6 +201,10 @@ img {
   color: var(--primary-dark-color);
 }
 
+.current-menu {
+  color: var(--pressed-color);
+}
+
 .mob-contact-tel {
   color: var(--brand-color);
 }
@@ -399,13 +403,14 @@ img {
 
 .customers-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  gap: 72px 10px;
 }
 
 .customers-link {
-  width: 190px;
+  width: 145px;
   height: 88px;
   display: flex;
   align-items: center;
@@ -577,15 +582,14 @@ img {
 /* ==================== PORTFOLIO-SECTION =============== */
 
 .portfolio-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 48px 0;
 }
 
 .filter-btn-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 48px;
 }
 
 .filter-btn {
@@ -617,13 +621,11 @@ img {
 
 .portfolio-card-list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .portfolio-card-content {
-  width: calc((100% - 48px) / 3);
   position: relative;
 }
 
@@ -653,7 +655,7 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
   color: var(--primary-dark-color);
 }

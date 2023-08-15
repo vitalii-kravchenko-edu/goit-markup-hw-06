@@ -20,9 +20,11 @@
   }
 
   .customers-list {
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 72px 16px;
+  }
+
+  .customers-link {
+    width: 190px;
   }
 
   .footer-input {
@@ -211,6 +213,26 @@
     width: 264px;
   }
 
+  .portfolio-section {
+    padding: 64px 0 96px;
+  }
+
+  .filter-btn-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .portfolio-card-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px 24px;
+  }
+
+  .portfolio-card-content {
+    width: calc((100% - 24px) / 2);
+  }
+
   .modal {
     width: 408px;
     padding: 72px 24px 24px;
@@ -348,5 +370,21 @@
 
   .footer-social-content {
     margin-right: 80px;
+  }
+
+  .portfolio-section {
+    padding: 96px 0 120px;
+  }
+
+  .filter-btn-list {
+    margin-bottom: 72px;
+  }
+
+  .portfolio-card-list {
+    gap: 48px 24px;
+  }
+
+  .portfolio-card-content {
+    width: calc((100% - 48px) / 3);
   }
 }
