@@ -3,7 +3,6 @@
 @media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
-    padding: 0 16px;
   }
 
   .mob-menu {
@@ -37,6 +36,14 @@
 }
 
 /* ========================== TABLET ====================== */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .team-section .container,
+  .customers-section .container,
+  .footer-section .container {
+    max-width: 584px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -156,6 +163,7 @@
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin: 0 auto 36px auto;
   }
 
   .features-list {
@@ -164,7 +172,10 @@
 
   .feature-item {
     max-width: calc((100% - 24px) / 2);
-    align-items: start;
+  }
+
+  .feature-title {
+    text-align: start;
   }
 
   .team-list {
@@ -195,7 +206,6 @@
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 72px 24px;
-    padding-left: 108px;
   }
 
   .footer-text-content,
@@ -244,6 +254,7 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding: 0 15px;
   }
 
   .logo {
@@ -282,6 +293,10 @@
         ),
         url(../images/hero-bg-img-desc-2x.jpg);
     }
+  }
+
+  .hero-title {
+    margin: 0 auto 48px auto;
   }
 
   .features-section {
